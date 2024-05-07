@@ -1,0 +1,9 @@
+<!-- src/app/user-profile/user-profile.component.html -->
+
+<div *ngIf="userData">
+  <h2>{{ userData.login }}</h2>
+  <img [src]="userData.avatar_url" alt="Avatar" />
+  <p>Name: {{ userData.name }}</p>
+  <p>Location: {{ userData.location }}</p>
+  <!-- Add more user data as needed -->
+</div>
